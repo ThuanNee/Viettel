@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route.js"></script>
+    <script src="../js/app.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <div ng-include="'layout/header.html'"></div>
+    <div ng-include="'layout/menu.html'"></div>
+    <div class="container pb-4  mobile-lienhe" style="margin-top: 150px;">
+        <div class="tieuDe">
+            <a href="" class="text-tieuDe px-4 ">
+                LIÊN HỆ
+            </a>
+            <hr>
+        </div>
+        <div class="row pb-4">
+            <div class="col-lg-6">
+                <div class="border p-3">
+                    <h2 class="title-internet">Các hình thức thanh toán Internet Viettel: </h2>
+                    <p class="mota"><b>Tại nhà: </b>thu cước tại địa chỉ lắp đặt (phí 5.000đ/tháng).</p>
+                    <p class="mota"><b>Điểm giao dịch Viettel: </b>miễn phí.</p>
+                    <p class="mota"><b>My Viettel hoặc Viettel Money: </b>miễn phí, giảm 3% hóa đơn.</p>
+                    <p class="mota"><b>Qua ngân hàng hoặc cổng thanh toán khác.</b></p>
+                </div>
+
+            </div>
+            <div class="col-lg-6 border pb-2 pt-1 form-dangky">
+                <h2 class="title-internet">Liên Hệ Tư Vấn: </h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="fullName" placeholder="Họ và Tên" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Số điện thoại" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Địa chỉ của bạn" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" rows="4" placeholder="Nội Dung Liên hệ"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="my-4 mobile-huongdan">
+            <div class="tieuDe">
+                <a href="" class="text-tieuDe px-4 ">
+                    HƯỚNG DẪN VỀ GÓI CƯỚC VÀ DỊCH VỤ INTERNET
+                </a>
+                <hr>
+            </div>
+            <div class="huongDanChiTiet">
+                <p class="mota">
+                    <b>1 Kiểm tra gói cước đang sử dụng: </b>
+                    <br>- Thông tin gói cước được ghi trên biên bản nghiệm thu, hợp đồng, hoặc hóa đơn thu cước.
+                    <br>- Có thể liên hệ tổng đài 1800 8119.
+                </p>
+                <p class="mota">
+                    <b>2 Chuyển đổi gói cước: </b>
+                    <br>- Khách hàng không phải trả lại thiết bị khi chuyển đổi gói, chỉ cần đem theo CMND/CCCD để đăng
+                    ký tại cửa
+                    hàng Viettel.
+                </p>
+                <p class="mota">
+                    <b>3 Chuyển đổi địa chỉ lắp đặt: </b>
+                    <br>- Áp dụng chuyển đổi nội tỉnh. Miễn phí di dời, khách hàng đem thiết bị đến địa chỉ mới.
+                </p>
+                <p class="mota">
+                    <b>4 Hủy hoặc tạm ngưng dịch vụ: </b>
+                    <br>- Để hủy hoặc tạm ngưng dịch vụ, khách hàng cần đem CMND/CCCD và hợp đồng đến cửa hàng Viettel
+                    gần nhất.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<div ng-include="'layout/footer.html'"></div>
+<script src="../js/bootstrap.bundle.js"></script>
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route.js"></script>
+    <script src="../js/app.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <div ng-include="'layout/header.html'"></div>
+    <div ng-include="'layout/menu.html'"></div>
+    <div class="container pb-4 mobile-dangky" style="margin-top: 150px;">
+        <div class="tieuDe">
+            <a href="" class="text-tieuDe px-4 ">
+                ĐĂNG KÝ
+            </a>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="border p-3">
+                    <h2 class="title-internet">Thủ Tục Đăng Ký: </h2>
+                    <p class="mota">
+                        <b>* Nếu khách hàng là cá nhân, gia đình: </b>Chỉ cần 01 bản photo căn cước công dân ( Không cần
+                        công chứng ) và hộ khẩu photo nếu mất căn cước công dân.
+                    </p>
+                    <p class="mota">
+                        <b>* Nếu khách hàng là doanh nghiệp: </b>Chỉ cần photo 01 bản giấy phép đăng ký kinh doanh, và
+                        kèm con dấu, chữ ký giám đốc.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 border pb-2 pt-1 form-dangky">
+                <h2 class="title-internet">Đăng Ký: </h2>
+                <form>
+                    <!-- Họ và Tên -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="fullName" placeholder="Họ và Tên" required>
+                    </div>
+
+                    <!-- Số điện thoại -->
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Số điện thoại" required>
+                    </div>
+
+                    <!-- Địa chỉ -->
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="address" placeholder="Địa chỉ của bạn" required>
+                    </div>
+
+                    <!-- Gói cước đăng ký -->
+                    <div class="mb-3">
+                        <select class="form-select" id="package" required>
+                            <option value="">Chọn gói cước</option>
+                            <option value="HOME">HOME - 165.000đ/Tháng</option>
+                            <option value="SUN 1">SUN 1 - 180.000đ/Tháng</option>
+                            <option value="SUN 2">SUN 2 - 229.000đ/Tháng</option>
+                            <option value="SUN 3">SUN 3 - 279.000đ/Tháng</option>
+                            <option value="STAR 1">STAR 1 - 210.000đ/Tháng</option>
+                            <option value="STAR 2">STAR 2 - 245.000đ/Tháng</option>
+                            <option value="STAR 3">STAR 3 - 299.000đ/Tháng</option>
+                            <option value="HOME + TV360 STD">HOME + TV360 STD - 185.000đ/Tháng</option>
+                            <option value="SUN 1 + TV360 STD">SUN 1 + TV360 STD - 200.000đ/Tháng</option>
+                            <option value="SUN 2 + TV360 STD">SUN 2 + TV360 STD - 249.000đ/Tháng</option>
+                            <option value="SUN 3 + TV360 STD">SUN 3 + TV360 STD - 299.000đ/Tháng</option>
+                            <option value="STAR 1 + TV360 STD">STAR 1 + TV360 STD - 230.000đ/Tháng</option>
+                            <option value="STAR 2 + TV360 STD">STAR 2 + TV360 STD - 265.000đ/Tháng</option>
+                            <option value="STAR 3 + TV360 STD">STAR 3 + TV360 STD - 319.000đ/Tháng</option>
+                            <option value="HOME + TV360 STDBOX">HOME + TV360 STDBOX - 215.000đ/Tháng</option>
+                            <option value="SUN 1 + TV360 STDBOX">SUN 1 + TV360 STDBOX - 230.000đ/Tháng</option>
+                            <option value="SUN 2 + TV360 STDBOX">SUN 2 + TV360 STDBOX - 279.000đ/Tháng</option>
+                            <option value="SUN 3 + TV360 STDBOX">SUN 3 + TV360 STDBOX - 329.000đ/Tháng</option>
+                            <option value="STAR 1 + TV360 STDBOX">STAR 1 + TV360 STDBOX - 260.000đ/Tháng</option>
+                            <option value="STAR 2 + TV360 STDBOX">STAR 2 + TV360 STDBOX - 295.000đ/Tháng</option>
+                            <option value="STAR 3 + TV360 STDBOX">STAR 3 + TV360 STDBOX - 349.000đ/Tháng</option>
+                        </select>
+                    </div>
+
+                    <!-- Phương án đóng cước -->
+                    <div class="mb-3">
+                        <select class="form-select" id="paymentOption" required>
+                            <option value="">Chọn phương án đóng cước</option>
+                            <option value="monthly">Đóng hàng tháng</option>
+                            <option value="quarterly">Đóng 6 tháng</option>
+                            <option value="yearly">Đóng 12 tháng</option>
+                        </select>
+                    </div>
+
+                    <!-- Lời nhắn -->
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" rows="4"
+                            placeholder="Lời nhắn (tuỳ chọn)"></textarea>
+                    </div>
+
+                    <!-- Nút gửi -->
+                    <button type="submit" class="btn btn-danger">Gửi đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<div ng-include="'layout/footer.html'"></div>
+<script src="../js/bootstrap.bundle.js"></script>
+
+
+
+</script>
+</body>
+
+</html>

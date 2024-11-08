@@ -222,7 +222,7 @@ a {
 
 /* cart */
 .cart {
-  font-size: 1.5rem;
+  font-size: 24px;
   position: relative;
 }
 
@@ -234,7 +234,7 @@ a {
   color: white;
   border-radius: 60%;
   padding: 2px 7px;
-  font-size: 0.8rem;
+  font-size: 12.8px;
   font-weight: bold;
 }
 
@@ -448,14 +448,14 @@ thead tr th {
   .p-uuDai {
     font-weight: bold;
     font-size: 12px !important;
-    line-height: 1rem !important;
+    line-height: 16px !important;
     margin-bottom: 5px;
   }
 
   .p-khungGia {
     font-weight: bold;
     font-size: 12px !important;
-    line-height: 1rem !important;
+    line-height: 16px !important;
     margin-bottom: 5px;
   }
 }
@@ -463,7 +463,7 @@ thead tr th {
 /* Produt*/
 .card-sp {
   position: relative;
-  width: 25rem;
+  width: 400px;
 }
 
 .card-title {
@@ -567,17 +567,17 @@ thead tr th {
 @media screen and (max-width: 765px) {
   .mobile-card-internet {
     margin-left: 65px;
-    width: 23rem;
+    width: 368px;
   }
 
   .card-sp {
     position: relative;
-    width: 23rem !important;
+    width: 368px !important;
     margin-bottom: 10px;
   }
 
   .card-img-internet {
-    width: 23rem !important;
+    width: 368px !important;
     height: auto !important;
   }
 
@@ -591,25 +591,25 @@ thead tr th {
 
   .card-text {
     font-size: 16px !important;
-    line-height: 0.8rem !important;
+    line-height: 12.8px !important;
     margin-bottom: 10px;
   }
 
   .card-camera {
-    width: 25rem !important;
+    width: 400px !important;
     float: none !important;
     margin-left: 63px;
     margin-top: 10px;
   }
 
   .card-img-camera1 {
-    width: 16rem !important;
+    width: 256px !important;
     margin-left: 70px;
     height: auto !important;
   }
 
   .card-img-camera2 {
-    width: 20rem !important;
+    width: 320px !important;
     margin-left: 50px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -652,7 +652,7 @@ thead tr th {
   }
 
   .card-img-TruyenHinh {
-    width: 23rem !important;
+    width: 368px !important;
   }
 }
 

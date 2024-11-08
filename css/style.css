@@ -39,7 +39,7 @@ a {
 }
 
 /* Header mobile */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   body {
     min-width: 552px !important;
   }
@@ -152,7 +152,7 @@ a {
 }
 
 /* Mobile menu */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   .offcanvas-body {
     padding: 15px;
     padding-top: 0;
@@ -214,7 +214,7 @@ a {
 }
 
 /* Mobile footer */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   .mobile-footer {
     display: none !important;
   }
@@ -266,7 +266,7 @@ a {
   color: white; /* Đổi màu icon khi hover */
 }
 /* Mobile Slide */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   .mobile-slide {
     margin-top: 30px !important;
     padding-bottom: 0 !important;
@@ -274,8 +274,8 @@ a {
 
   .carousel-item img {
     width: 100%;
-    height: auto !important;
-    max-width: 575.98px;
+    height: auto ;
+    max-width: 765px;
   }
 
   .prev-icon,
@@ -314,7 +314,7 @@ ul.nav-tabs {
 }
 
 /* Mobile Content */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   hr {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -339,9 +339,9 @@ ul.nav-tabs {
 
 /* Internet */
 /* Tùy chỉnh nút tab */
-button.nav-link {
+.dichVuBtn {
   padding: 10px 20px;
-  border: 2px solid #ccc;
+  border-color: #c4b4b4 !important;
   color: #333;
   transition: 0.3s;
   font-size: 20px;
@@ -349,7 +349,13 @@ button.nav-link {
   margin-top: 30px;
 }
 
-button.nav-link.active {
+.dichVuBtn:hover {
+  color: #333;
+  font-weight: bold;
+  background-color: #df3138;
+}
+
+.dichVuBtn.active {
   background-color: #df3138 !important;
   border-color: gray;
   color: white !important;
@@ -359,6 +365,7 @@ button.nav-link.active {
 tr td {
   font-size: 20px;
   padding-left: 20px;
+  text-align: center;
 }
 tr th {
   text-align: center;
@@ -400,7 +407,7 @@ thead tr th {
 }
 
 /*Mobile Internet */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   button.nav-link {
     padding: 6px 12px;
     font-size: 14px;
@@ -483,12 +490,15 @@ thead tr th {
 
 .card-camera {
   width: 540px;
+  position: relative;
 }
 
 .card-img-camera1 {
-  width: 300px;
-  margin-left: 110px;
-  height: 450px;
+  width: 260px;
+  margin-left: 140px;
+  height: 410px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .card-img-camera2 {
@@ -496,6 +506,21 @@ thead tr th {
   margin-left: 70px;
   padding-bottom: 90px;
   padding-top: 40px;
+}
+
+.uuDaiCmr {
+  position: absolute;
+}
+
+.uuDaiCmr span{
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px !important;
+}
+
+.gitHot {
+  width: 80px;
 }
 
 .btn-sp {
@@ -539,7 +564,7 @@ thead tr th {
 }
 
 /*Mobile Produt*/
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   .mobile-card-internet {
     margin-left: 65px;
     width: 23rem;
@@ -648,7 +673,7 @@ thead tr th {
 }
 
 /* Mobile ChiTiet */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   .chiTiet-Top {
     margin-top: 50px !important;
     padding-bottom: 0 !important;
@@ -697,7 +722,7 @@ thead tr th {
 }
 
 /* Mobile GioiThieu DangKy LienHe*/
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 765px) {
   .mobile-dangky,
   .mobile-lienhe,
   .mobile-gioithieu {
@@ -754,10 +779,33 @@ thead tr th {
   /* Hiệu ứng khi hover */
 }
 
+#lienHeSDT {
+  position: fixed;
+  bottom: 100px;
+  right: 80px;
+  width: 50px;
+  /* Chiều rộng của nút */
+  height: 50px;
+  /* Chiều cao của nút */
+  border: none;
+  border-radius: 50%;
+  z-index: 1000;
+  justify-content: center;
+  /* Căn giữa biểu tượng */
+  align-items: center;
+  /* Căn giữa biểu tượng */
+  display: flex;
+  /* Sử dụng flexbox để căn giữa */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Đổ bóng nhẹ */
+  transition: background-color 0.3s ease;
+  /* Hiệu ứng khi hover */
+}
+
 #scrollToTopBtn {
   position: fixed;
   bottom: 170px;
-  right: 20px;
+  right: 50px;
   width: 50px;
   /* Chiều rộng của nút */
   height: 50px;

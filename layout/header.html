@@ -65,23 +65,19 @@
             </div>
         </div>
     </div>
+    <!-- Mobile View -->
     <div class="row d-md-none">
         <div class="col-3">
             <a class="text-header-left" href="index.html">
                 <img style="width: 100%;" src="img/logo.png" alt="">
             </a>
         </div>
-        <div class="col-3 text-header">
-            <a class="text-header-left me-1 text-header-mobile" href="GioiThieu.html" style="font-size: 14px;"> Giới
-                Thiệu </a>
-            <a class="text-header-left text-header-mobile" href="LienHe.html" style="font-size: 14px;"> Tư Vấn </a>
-        </div>
-        <div class="col-5">
+        <div class="col-8">
             <div class="row">
                 <div class="col-4 mb-1">
                     <div class="topContai">
                         <div class="row text-header-right pt-0">
-                            <div class="col-9 px-0"> <!-- Chỉ giữ lại nội dung trong col-9 -->
+                            <div class="col-9 px-0">
                                 <strong>Liên Hệ</strong>
                                 <p>0985 106 106</p>
                             </div>
@@ -92,7 +88,7 @@
                     <div class="topContai">
                         <a href="DangKy.html">
                             <div class="row text-header-right pt-0">
-                                <div class="col-9 px-0 "> <!-- Chỉ giữ lại nội dung trong col-9 -->
+                                <div class="col-9 px-0">
                                     <strong>THỦ TỤC</strong><br>
                                     <p>Thủ tục đăng ký</p>
                                 </div>
@@ -104,7 +100,7 @@
                     <div class="topContai">
                         <a href="DangKy.html">
                             <div class="row text-header-right pt-0">
-                                <div class="col-9 px-0"> <!-- Chỉ giữ lại nội dung trong col-9 -->
+                                <div class="col-9 px-0">
                                     <strong>ĐĂNG KÝ</strong><br>
                                     <p>Liên hệ đăng ký</p>
                                 </div>
@@ -116,18 +112,15 @@
         </div>
         <div class="col-1 mb-1">
             <!-- Nút Offcanvas cho mobile, chỉ hiển thị ở mobile -->
-            <button class="btn d-lg-none btn-menu" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            <button class="btn d-lg-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                 <i class="bi bi-list"></i>
             </button>
 
             <!-- Offcanvas cho mobile, chỉ hiển thị ở mobile -->
-            <div class="offcanvas offcanvas-end d-lg-none text-bg-dark " data-bs-backdrop="static" tabindex="-1"
-                id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas offcanvas-end d-lg-none text-bg-dark " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav">
@@ -135,18 +128,24 @@
                             <a class="nav-link text-menu-mobile" href="index.html">Trang Chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-menu-mobile" href="index.html#!#Internet">Internet</a>
+                            <a class="nav-link text-menu-mobile" href="index.html#!#Internet" data-bs-dismiss="offcanvas">Internet</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-menu-mobile" href="index.html#!#Camera">Camera</a>
+                            <a class="nav-link text-menu-mobile" href="index.html#!#Camera" data-bs-dismiss="offcanvas">Camera</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-menu-mobile" href="index.html#!#TruyenHinh">Truyền Hình</a>
+                            <a class="nav-link text-menu-mobile" href="index.html#!#TruyenHinh data-bs-dismiss="offcanvas"">Truyền Hình</a>
+                        </li>
+                        <!-- Thêm Giới Thiệu và Tư Vấn vào Offcanvas cho mobile -->
+                        <li class="nav-item">
+                            <a class="nav-link text-menu-mobile" href="GioiThieu.html">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-menu-mobile" href="LienHe.html">Tư Vấn</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
 </header>

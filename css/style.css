@@ -36,6 +36,14 @@ a {
   padding-top: 10px;
 }
 
+.header-text{
+  font-size: 16px;
+}
+
+.header-text-detail{
+  font-size: 13px !important;
+}
+
 .text-header {
   font-weight: bold;
   padding-right: 10px;
@@ -45,10 +53,13 @@ a {
 @media screen and (max-width: 765px) {
   body {
     min-width:  100%;
+    width: 100%;
   }
 
   .parent-header{
-    height: 8%;
+    height: 7.3%;
+    padding-top: 12px;
+    max-height: 100%;
   }
   .text-header {
     margin: 0 !important;
@@ -79,9 +90,10 @@ a {
   }
 
   .text-header-left img {
-    width: 80%; /* Điều chỉnh kích thước logo cho mobile */
-    max-width: 120px; /* Giới hạn kích thước tối đa */
-    padding-top: 5px;
+    width: 100% !important; /* Điều chỉnh kích thước logo cho mobile */
+    max-width: 150px; /* Giới hạn kích thước tối đa */
+    padding-top: 10%;
+    padding : 6% 0 0 0 !important;
   }
 
   .topContai {
@@ -104,12 +116,16 @@ a {
     margin-bottom: 0;
   }
 
+  .btn-menu i{
+    font-size: 26px;
+  }
+
   #staticBackdrop {
     width: 40%;
   }
 
   .text-menu-mobile {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 }
 
@@ -230,6 +246,9 @@ a {
     display: none !important;
   }
 }
+.mobile-index{
+  margin-top: 8%;
+}
 
 /* cart */
 .cart {
@@ -249,68 +268,11 @@ a {
   font-weight: bold;
 }
 
-/* Slide */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  border-color: #df3138; /* Khi hover, viền chuyển thành màu đỏ */
-}
-
-.prev-icon,
-.next-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgb(222, 226, 230); /* Viền xung quanh biểu tượng */
-  border-radius: 50%; /* Bo tròn biểu tượng bên trong */
-  font-size: 26px;
-  padding: 10px; /* Giảm padding để phù hợp với kích thước border */
-  width: 50px; /* Tăng kích thước để chứa icon và border */
-  height: 50px;
-  margin-top: 60px;
-  color: #fff;
-}
-
-.prev-icon:hover,
-.next-icon:hover {
-  background-color: #df3138; /* Biểu tượng đổi màu khi hover */
-  border-color: #df3138; /* Đổi màu viền khi hover */
-  color: white; /* Đổi màu icon khi hover */
-}
-/* Mobile Slide */
-@media screen and (max-width: 765px) {
-  .mobile-slide {
-    margin-top: 30px !important;
-    padding-bottom: 0 !important;
-  }
-
-  .carousel-item img {
-    width: 100%;
-    height: auto ;
-    max-width: 765px;
-  }
-
-  .prev-icon,
-  .next-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(222, 226, 230); /* Viền xung quanh biểu tượng */
-    border-radius: 50%; /* Bo tròn biểu tượng bên trong */
-    font-size: 13px;
-    padding: 5px; /* Giảm padding để phù hợp với kích thước border */
-    width: 30px; /* Tăng kích thước để chứa icon và border */
-    height: 30px;
-    margin-top: 30px;
-    color: #fff;
-  }
-}
-
 /*Content */
 .tieuDe {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
 }
 
 .text-tieuDe {
@@ -340,6 +302,7 @@ ul.nav-tabs {
     padding-bottom: 7px !important;
     color: #df3138;
     margin-top: 20px;
+    font-size: 16px;
   }
 
   /* Căn giữa các tab */
@@ -474,7 +437,7 @@ thead tr th {
 /* Produt*/
 .card-sp {
   position: relative;
-  width: 400px;
+  /* width: 100%; */
 }
 
 .card-title {
@@ -489,7 +452,7 @@ thead tr th {
 }
 
 .card-text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 0.8;
   font-weight: bold;
 }
@@ -500,13 +463,13 @@ thead tr th {
 }
 
 .card-camera {
-  /* width: 540px; */
-  position: relative;
+  width: 100%;
 }
 
 .card-img-camera1 {
   width: 260px;
-  margin-left: 140px;
+  margin-left: 30%;
+  margin-right: 30%;
   height: 410px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -514,13 +477,14 @@ thead tr th {
 
 .card-img-camera2 {
   width: 400px;
-  margin-left: 70px;
+  margin-left: 20%;
+  margin-right: 20%;
   padding-bottom: 90px;
   padding-top: 40px;
 }
 
 .uuDaiCmr {
-  position: absolute;
+  text-align: center;
 }
 
 .uuDaiCmr span{
@@ -542,8 +506,20 @@ thead tr th {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  min-width: 180px;
+  min-width: 45%;
   font-size: 20px;
+}
+
+.btn-dk{
+  margin-left: 15px;
+}
+
+.btn-xct{
+  margin-left: 28px ;
+}
+
+.btn-left{
+  margin-left: 23px;
 }
 
 .btn-sp:hover {
@@ -578,12 +554,14 @@ thead tr th {
 @media screen and (max-width: 765px) {
   .mobile-card-internet {
     width: 368px;
+    padding: 0;
   }
 
   .card-sp {
     position: relative;
     width: 368px !important;
     margin-bottom: 10px;
+    margin-left: 0px;
   }
 
   .card-img-internet {
@@ -624,14 +602,19 @@ thead tr th {
     padding-top: 0px;
   }
   .btn-camera-mobile {
-    padding-left: 17px !important;
-  }
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;
+    }
 
   .btn-sp {
-    width: 165px !important;
-    min-width: 165px;
+    width: 45% !important;
+    min-width: 45%;
     font-size: 16px;
     margin-left: 0 !important;
+    /* display: block; */
+    margin: 0 auto;
+    text-align: center;
   }
 
   .btn-sp:hover {
@@ -733,8 +716,9 @@ thead tr th {
 @media screen and (max-width: 765px) {
   .mobile-dangky,
   .mobile-lienhe,
-  .mobile-gioithieu {
-    margin-top: 50px !important;
+  .mobile-gioithieu,
+  .mobile-index {
+    margin-top: 15% !important;
   }
 
   .form-dangky {

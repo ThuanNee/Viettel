@@ -18,7 +18,7 @@
 <body ng-app="myApp">
     <div ng-include="'layout/header.html'"></div>
     <div ng-include="'layout/menu.html'"></div>
-    <div class="container-fluid px-0 pb-3 mobile-slide" style="margin-top: 135px;">
+    <!-- <div class="container-fluid px-0 pb-3 mobile-slide" style="margin-top: 135px;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -48,9 +48,9 @@
                 <i class="bi bi-chevron-right next-icon"></i>
             </button>
         </div>
-    </div>
-    <div class="container pb-4">
-        <div class="tieuDe" id="Internet">
+    </div> -->
+    <div class="container pb-4 mobile-index">
+        <div class="tieuDe" id="Wifi">
             <a href="" class="text-tieuDe px-4 ">
                 CÁC DỊCH VỤ VIETTEL
             </a>
@@ -73,7 +73,7 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link mt-0 dichVuBtn" id="profile-tab" data-bs-toggle="tab"
                     data-bs-target="#Internet4g5g" type="button" role="tab" aria-controls="profile-tab-pane"
-                    aria-selected="false">Internet 4G/5G</button>
+                    aria-selected="false">4G/5G</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -292,30 +292,39 @@
                 <table class="table table-bordered border-danger">
                     <thead>
                         <tr>
-                            <th scope="col">Gói Cloud</th>
-                            <th scope="col">Đơn Giá/Camera/Tháng</th>
+                            <th scope="col">Gói Cước Data 4G Thông Dụng</th>
+                            <th scope="col">Dữ Liệu/Ngày</th>
+                            <th scope="col">Ưu Đãi</th>
+                            <th scope="col">Giá Gói Cước</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Gói 7 ngày</th>
-                            <td>40.000đ</td>
+                            <th scope="row">SD70</th>
+                            <td>1GB/Ngày</td>
+                            <td></td>
+                            <td>70.000đ</td>
                         </tr>
                         <tr>
-                            <th scope="row">Gói 15 ngày</th>
-                            <td>60.000đ</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Gói 30 ngày</th>
+                            <th scope="row">V90B</th>
+                            <td>1GB/Ngày</td>
+                            <td>10p gọi nội mạng, 50p gọi ngoại mạng</td>
                             <td>90.000đ</td>
                         </tr>
+                        <tr>
+                            <th scope="row">V120B</th>
+                            <td>1.5GB/Ngày</td>
+                            <td>10p gọi nội mạng, 50p gọi ngoại mạng, miễn phí TV 360 basic</td>
+                            <td>120.000đ</td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
         </div>
         <div class="tieuDe" id="Wifi">
             <a href="" class="text-tieuDe px-4 ">
-                CÁC GÓI CƯỚC INTERNET VIETTEL THÔNG DỤNG
+                CÁC GÓI CƯỚC WIFI THÔNG DỤNG
             </a>
             <hr>
         </div>
@@ -326,18 +335,17 @@
                     <div class="card-body c-body">
                         <h5 class="card-title">Gói gia đình</h5>
                         <div class="card-ct">
-                            <p class="card-text">Tốc độ: <span class="c-nd" style="padding-left: 200px;">100 Mbps</span>
+                            <p class="card-text">Tốc độ: <span class="c-nd" style="float: right;">100 Mbps</span>
                             </p>
-                            <p class="card-text">Giá Cước: <span class="c-nd"
-                                    style="padding-left: 185px;">165.000đ</span></p>
-                            <p class="card-text">Phù hợp: <span class="c-nd"
-                                    style="padding-left: 50px;">Cho gia đình từ 3-4 người</span></p>
-                            <p class="card-text">Phí Hoàn Mạng: <span class="c-nd"
-                                    style="padding-left: 130px;">300.000đ</span></p>
-                            <p class="card-text">Trả Trước 12 Tháng: <span class="c-nd" style="padding-left: 10px;">Tặng
+                            <p class="card-text">Giá Cước: <span class="c-nd" style="float: right;">165.000đ</span></p>
+                            <p class="card-text">Phù hợp: <span class="c-nd" style="float: right;">Cho gia đình từ 3-4
+                                    người</span></p>
+                            <p class="card-text">Phí Hoàn Mạng: <span class="c-nd" style="float: right;">300.000đ</span>
+                            </p>
+                            <p class="card-text">Trả Trước 12 Tháng: <span class="c-nd" style="float: right;">Tặng
                                     thêm 1 tháng</span></p>
                         </div>
-                        <a href="DangKy.html" class="btn btn-sp">Đăng Ký</a>
+                        <a href="DangKy.html" class="btn btn-sp btn-dk ">Đăng Ký</a>
                         <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
                     </div>
                 </div>
@@ -348,18 +356,17 @@
                     <div class="card-body c-body">
                         <h5 class="card-title">SUN 1</h5>
                         <div class="card-ct">
-                            <p class="card-text">Tốc độ: <span class="c-nd" style="padding-left: 200px;">150 Mbps</span>
+                            <p class="card-text">Tốc độ: <span class="c-nd" style="float: right;">150 Mbps</span>
                             </p>
-                            <p class="card-text">Giá Cước: <span class="c-nd"
-                                    style="padding-left: 185px;">180.000đ</span></p>
-                                    <p class="card-text">Phù hợp: <span class="c-nd"
-                                        style="padding-left: 50px;">Cho gia đình từ 3-4 người</span></p>
-                            <p class="card-text">Phí Hoàn Mạng: <span class="c-nd"
-                                    style="padding-left: 130px;">300.000đ</span></p>
-                            <p class="card-text">Trả Trước 12 Tháng: <span class="c-nd" style="padding-left: 10px;">Tặng
+                            <p class="card-text">Giá Cước: <span class="c-nd" style="float: right;">180.000đ</span></p>
+                            <p class="card-text">Phù hợp: <span class="c-nd" style="float: right;">Cho gia đình từ 3-4
+                                    người</span></p>
+                            <p class="card-text">Phí Hoàn Mạng: <span class="c-nd" style="float: right;">300.000đ</span>
+                            </p>
+                            <p class="card-text">Trả Trước 12 Tháng: <span class="c-nd" style="float: right;">Tặng
                                     thêm 1 tháng</span></p>
                         </div>
-                        <a href="DangKy.html" class="btn btn-sp">Đăng Ký</a>
+                        <a href="DangKy.html" class="btn btn-sp btn-dk">Đăng Ký</a>
                         <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
                     </div>
                 </div>
@@ -370,18 +377,17 @@
                     <div class="card-body c-body">
                         <h5 class="card-title">STAR 1</h5>
                         <div class="card-ct">
-                            <p class="card-text">Tốc độ: <span class="c-nd" style="padding-left: 200px;">150 Mbps</span>
+                            <p class="card-text">Tốc độ: <span class="c-nd" style="float: right;">150 Mbps</span>
                             </p>
-                            <p class="card-text">Giá Cước: <span class="c-nd"
-                                    style="padding-left: 185px;">210.000đ</span></p>
-                                    <p class="card-text">Phù hợp: <span class="c-nd"
-                                        style="padding-left: 50px;">Cho gia đình từ 3-4 người</span></p>
-                            <p class="card-text">Phí Hoàn Mạng: <span class="c-nd"
-                                    style="padding-left: 130px;">300.000đ</span></p>
-                            <p class="card-text">Trả Trước 12 Tháng: <span class="c-nd" style="padding-left: 10px;">Tặng
+                            <p class="card-text">Giá Cước: <span class="c-nd" style="float: right;">210.000đ</span></p>
+                            <p class="card-text">Phù hợp: <span class="c-nd" style="float: right;">Cho gia đình từ 3-4
+                                    người</span></p>
+                            <p class="card-text">Phí Hoàn Mạng: <span class="c-nd" style="float: right;">300.000đ</span>
+                            </p>
+                            <p class="card-text">Trả Trước 12 Tháng: <span class="c-nd" style="float: right;">Tặng
                                     thêm 1 tháng</span></p>
                         </div>
-                        <a href="DangKy.html" class="btn btn-sp">Đăng Ký</a>
+                        <a href="DangKy.html" class="btn btn-sp btn-dk">Đăng Ký</a>
                         <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
                     </div>
                 </div>
@@ -391,20 +397,20 @@
     </div>
 
     <div class="container pb-4">
-        <div class="tieuDe" id="Camera"hfg>
+        <div class="tieuDe" id="Camera" hfg>
             <a href="" class="text-tieuDe px-4 ">
                 CAMERA QUAN SÁT CHUYÊN NGHIỆP
             </a>
             <hr>
         </div>
+        <div class="uuDaiCmr">
+            <img src="./img/hot.gif" alt="" class="gitHot">
+            <span>Tặng miễn phí 2 camera trong nhà chỉ cần thêm 300.000đ/cái đối với camera ngoài trời</span>
+        </div>
         <div class="row">
             <div class="col-lg-6">
                 <div class="card card-camera" style="float: right;">
                     <img src="./img/CameraTrong.png" class="card-img-camera1" alt="...">
-                    <div class="uuDaiCmr">
-                        <img src="./img/hot.gif" alt="" class="gitHot">
-                        <span>Tặng miễn phí 2 camera trong nhà</span>
-                    </div>
 
                     <div class="card-body c-body">
                         <h5 class="card-title">Camera wifi trong nhà HC23</h5>
@@ -431,8 +437,7 @@
                                     style="padding-left: 30px; font-size: 24px;">690.000đ</span></p>
                         </div>
                         <div class="btn-camera-mobile">
-                            <a href="camera-detail.html" class="btn btn-sp" style="width: 200px; margin-left: 60px;">Xem
-                                Chi Tiết</a>
+                            <a href="camera-detail.html" class="btn btn-sp btn-xct">Xem Chi Tiết</a>
                             <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
                         </div>
                     </div>
@@ -441,11 +446,6 @@
             <div class="col-lg-6">
                 <div class="card card-camera">
                     <img src="./img/CameraNgoai.png" class="card-img-camera2" alt="...">
-                    <div class="uuDaiCmr">
-                        <img src="./img/hot.gif" alt="" class="gitHot">
-                        <span>Tặng miễn phí 2 camera chỉ cần thêm 300.000đ/cái</span>
-
-                    </div>
                     <div class="card-body c-body">
                         <h5 class="card-title">Camera wifi ngoài trời HC33 </h5>
                         <div class="card-ct">
@@ -467,11 +467,9 @@
                                     style="padding-left: 30px; font-size: 24px;">990.000đ</span></p>
                         </div>
                         <div class="btn-camera-mobile">
-                            <a href="camera-detail.html" class="btn btn-sp" style="width: 200px; margin-left: 60px;">Xem
-                                Chi Tiết</a>
+                            <a href="camera-detail.html" class="btn btn-sp btn-xct">Xem Chi Tiết</a>
                             <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -486,9 +484,9 @@
             <hr>
         </div>
         <div class="row">
-            <div class="col-lg-6 mobile-card-truyenhinh1">
-                <div class="card card-sp" style="float: right; width: 540px;">
-                    <img src="./img/TV360_STD.jpg" class="card-img-TruyenHinh" alt="..." style="width: 540px;">
+            <div class="col-lg-6  mobile-card-truyenhinh2">
+                <div class="card card-sp" style="width: 540px;">
+                    <img src="./img/TV360_STDBOX.jpg" class="card-img-TruyenHinh" alt="..." style="width: 540px;">
                     <div class="card-body c-body">
                         <h5 class="card-title">TV360 STD</h5>
                         <div class="card-ct">
@@ -507,14 +505,13 @@
                             <p class="card-text ps-4">Giá Cước: <span class="c-nd"
                                     style="padding-left: 30px; font-size: 24px;">30.000đ / tháng</span></p>
                         </div>
-                        <a href="TruyenHinh-detail.html" class="btn btn-sp" style="width: 200px; margin-left: 60px;">Xem
-                            Chi Tiết</a>
+                        <a href="TruyenHinh-detail.html" class="btn btn-sp btn-left">Xem Chi Tiết</a>
                         <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6  mobile-card-truyenhinh2">
-                <div class="card card-sp" style=" width: 540px; ">
+                <div class="card card-sp" style="width: 540px;">
                     <img src="./img/TV360_STDBOX.jpg" class="card-img-TruyenHinh" alt="..." style="width: 540px;">
                     <div class="card-body c-body">
                         <h5 class="card-title">TV360 STDBOX</h5>
@@ -534,8 +531,7 @@
                             <p class="card-text ps-4">Giá Cước: <span class="c-nd"
                                     style="padding-left: 30px; font-size: 24px;">60.000đ / tháng</span></p>
                         </div>
-                        <a href="TruyenHinh-detail.html" class="btn btn-sp" style="width: 200px; margin-left: 60px;">Xem
-                            Chi Tiết</a>
+                        <a href="TruyenHinh-detail.html" class="btn btn-sp btn-left">Xem Chi Tiết</a>
                         <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
                     </div>
                 </div>
@@ -543,12 +539,130 @@
         </div>
 
     </div>
+
+    <div class="container pb-4">
+        <div class="tieuDe" id="TruyenHinh">
+            <a href="" class="text-tieuDe px-4 ">
+                CÁC GÓI 5G THÔNG DỤNG
+            </a>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-6  mobile-card-truyenhinh2">
+                <div class="card card-sp" style="width: 540px;">
+                    <img src="./img/5g.webp" class="card-img-TruyenHinh" alt="..." style="width: 540px;">
+                    <div class="card-body c-body">
+                        <h5 class="card-title">5G135</h5>
+                        <div class="card-ct px-4">
+                            <p class="card-text" style="font-size: 20px;">Dữ Liệu/Ngày: <span class="c-nd"
+                                    style="float: right;">4GB/Ngày</span>
+                            </p>
+                            <p class="card-text" style="font-size: 20px;">Giá Cước: <span class="c-nd"
+                                    style="float: right;">135.000đ</span></p>
+                            <p class="card-text" style="font-size: 20px;">Ưu đãi: <span class="c-nd"
+                                    style="float: right;">Miễn phí TV360 4K,
+                                    20GB Mybox</span></p>
+                        </div>
+                        <a href="DangKy.html" class="btn btn-sp btn-left">Đăng Ký</a>
+                        <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  mobile-card-truyenhinh2">
+                <div class="card card-sp" style="width: 540px;">
+                    <img src="./img/5g.webp" class="card-img-TruyenHinh" alt="..." style="width: 540px;">
+                    <div class="card-body c-body">
+                        <h5 class="card-title">5G150</h5>
+                        <div class="card-ct px-4">
+                            <p class="card-text" style="font-size: 20px;">Dữ Liệu/Ngày: <span class="c-nd"
+                                    style="float: right;">4GB/Ngày</span>
+                            </p>
+                            <p class="card-text" style="font-size: 20px;">Giá Cước: <span class="c-nd"
+                                    style="float: right;">150.000đ</span></p>
+                            <p class="card-text" style="font-size: 20px;">Ưu đãi: <span class="c-nd"
+                                    style="float: right;">Miễn phí TV360 4K,
+                                    30GB Mybox</span></p>
+                        </div>
+                        <a href="DangKy.html" class="btn btn-sp btn-left">Đăng Ký</a>
+                        <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href=""><button class="all-Internet mt-3">Xem thêm chi tiết</button> </a>
+
+    </div>
+
+    <div class="container pb-4">
+        <div class="tieuDe" id="Wifi">
+            <a href="" class="text-tieuDe px-4 ">
+                CÁC GÓI CƯỚC 4G THÔNG DỤNG
+            </a>
+            <hr>
+        </div>
+        <div class="row ms-1">
+            <div class="col-lg-4 mobile-card-internet">
+                <div class="card card-sp">
+                    <img src="./img/4g.jpg" class="card-img-internet" alt="...">
+                    <div class="card-body c-body">
+                        <h5 class="card-title">SD70</h5>
+                        <div class="card-ct">
+                            <p class="card-text">Dữ liệu/Ngày: <span class="c-nd" style="float: right;">1GB/Ngày</span>
+                            </p>
+                            <p class="card-text">Thời lượng gói: <span class="c-nd" style="float: right;">30GB/30
+                                    ngày</span></p>
+                            <p class="card-text">Giá Cước: <span class="c-nd" style="float: right;">70.000đ</span></p>
+                        </div>
+                        <a href="DangKy.html" class="btn btn-sp btn-dk ">Đăng Ký</a>
+                        <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mobile-card-internet">
+                <div class="card card-sp">
+                    <img src="./img/4g.jpg" class="card-img-internet" alt="...">
+                    <div class="card-body c-body">
+                        <h5 class="card-title">V90B</h5>
+                        <div class="card-ct">
+                            <p class="card-text">Dữ liệu/Ngày: <span class="c-nd" style="float: right;">1GB/Ngày</span>
+                            </p>
+                            <p class="card-text">Thời lượng gói: <span class="c-nd" style="float: right;">30GB/30
+                                    ngày</span></p>
+                            <p class="card-text">Giá Cước: <span class="c-nd" style="float: right;">90.000đ</span></p>
+                        </div>
+                        <a href="DangKy.html" class="btn btn-sp btn-dk">Đăng Ký</a>
+                        <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mobile-card-internet">
+                <div class="card card-sp">
+                    <img src="./img/4g.jpg" class="card-img-internet" alt="...">
+                    <div class="card-body c-body">
+                        <h5 class="card-title">V120B</h5>
+                        <div class="card-ct">
+                            <p class="card-text">Dữ liệu/Ngày: <span class="c-nd"
+                                    style="float: right;">1.5GB/Ngày</span>
+                            </p>
+                            <p class="card-text">Thời lượng gói: <span class="c-nd" style="float: right;">45GB/30
+                                    ngày</span></p>
+                            <p class="card-text">Giá Cước: <span class="c-nd" style="float: right;">120.000đ</span></p>
+                        </div>
+                        <a href="DangKy.html" class="btn btn-sp btn-dk">Đăng Ký</a>
+                        <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href=""><button class="all-Internet mt-3">Xem thêm chi tiết</button> </a>
+    </div>
+
     <button id="scrollToTopBtn"><i class="bi bi-chevron-double-up"></i></button>
     <button id="lienHeZalo"><img src="./img/zalo.png" alt="" width="50px"></button>
     <button id="lienHeSDT"><img src="./img/phone.png" alt="" width="50px"></button>
     <div ng-include="'layout/footer.html'"></div>
 
-    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
     <script>
         // Hiển thị button khi người dùng cuộn xuống
         window.onscroll = function () {

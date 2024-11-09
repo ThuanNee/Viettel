@@ -79,14 +79,34 @@
         <p class="mota">- Hình ảnh quan sát có màu vào ban đêm</p>
         <p class="mota">- Tích hợp tính năng AI cho phép phân biệt chuyển động của con người với con vật.</p>
         <div class="pt-3 pb-4 Camera-btn-mobile">
-            <a href="DangKy.html" class="btn btn-sp" style="width: 200px; margin-left: 445px;">Đăng Ký Ngay</a>
+            <a href="DangKy.html" class="btn btn-sp" style="">Đăng Ký Ngay</a>
             <a href="LienHe.html" class="btn btn-sp">Tư Vấn</a>
         </div>
     </div>
+    <button id="scrollToTopBtn"><i class="bi bi-chevron-double-up"></i></button>
     <button id="lienHeZalo"><img src="./img/zalo.png" alt="" width="50px"></button>
     <button id="lienHeSDT"><img src="./img/phone.png" alt="" width="50px"></button>
     <div ng-include="'layout/footer.html'"></div>
     <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        // Hiển thị button khi người dùng cuộn xuống
+        window.onscroll = function () {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block"; // Hiện button khi cuộn quá 100px
+            } else {
+                scrollToTopBtn.style.display = "none"; // Ẩn button khi chưa cuộn đủ 100px
+            }
+        };
+
+        // Khi click vào button, cuộn về đầu trang
+        document.getElementById("scrollToTopBtn").onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Cuộn mượt
+            });
+        };
+    </script>
 </body>
 
 </html>

@@ -23,7 +23,7 @@
     <div class="container pb-4 mobile-gioithieu" style="margin-top: 150px;">
         <div class="tieuDe">
             <a href="" class="text-tieuDe px-4 ">
-                THÔNG TIN VỀ VIETTEL NINH KIỀU CẦN THƠ
+                VIETTEL NINH KIỀU CẦN THƠ
             </a>
             <hr>
         </div>
@@ -55,8 +55,30 @@
             <p class="mota"><b>- Giờ làm việc: </b>Tất cả các ngày trong tuần từ 8h00 đến 18h00</p>
         </div>
     </div>
+    <button id="scrollToTopBtn"><i class="bi bi-chevron-double-up"></i></button>
+    <button id="lienHeZalo"><img src="./img/zalo.png" alt="" width="50px"></button>
+    <button id="lienHeSDT"><img src="./img/phone.png" alt="" width="50px"></button>
     <div ng-include="'layout/footer.html'"></div>
     <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        // Hiển thị button khi người dùng cuộn xuống
+        window.onscroll = function () {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block"; // Hiện button khi cuộn quá 100px
+            } else {
+                scrollToTopBtn.style.display = "none"; // Ẩn button khi chưa cuộn đủ 100px
+            }
+        };
+
+        // Khi click vào button, cuộn về đầu trang
+        document.getElementById("scrollToTopBtn").onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Cuộn mượt
+            });
+        };
+    </script>
 </body>
 
 </html>

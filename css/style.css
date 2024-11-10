@@ -696,7 +696,7 @@ thead tr th {
 
   .card-text {
     font-size: 13px !important;
-    line-height: 12.8px !important;
+    line-height: 15px !important;
     margin-bottom: 5px;
   }
 
@@ -727,6 +727,16 @@ thead tr th {
     padding-bottom: 0px;
     padding-top: 0px;
   }
+
+  .camera1-mobile
+  {
+    max-width: 310px;
+  }
+
+  .camera2-mobile{
+    max-width: 220px;
+  }
+
   .btn-camera-mobile {
     display: flex;
     justify-content: center; /* Căn giữa theo chiều ngang */
@@ -824,8 +834,9 @@ thead tr th {
   .mobile-dangky,
   .mobile-lienhe,
   .mobile-gioithieu,
-  .mobile-index {
-    margin-top: 13% !important;
+  .mobile-index,
+  .chiTiet-Top {
+    margin-top: 13.5% !important;
   }
 
   .form-dangky {

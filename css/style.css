@@ -591,6 +591,8 @@ thead tr th {
     color: #df3138;
     margin-top: 20px;
     font-size: 18px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 
   /* Căn giữa các tab */

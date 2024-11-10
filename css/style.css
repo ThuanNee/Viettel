@@ -1,5 +1,3 @@
-
-
 body {
   font-family: roboto;
 }
@@ -36,97 +34,17 @@ a {
   padding-top: 10px;
 }
 
-.header-text{
+.header-text {
   font-size: 16px;
 }
 
-.header-text-detail{
+.header-text-detail {
   font-size: 13px !important;
 }
 
 .text-header {
   font-weight: bold;
   padding-right: 10px;
-}
-
-/* Header mobile */
-@media screen and (max-width: 765px) {
-  body {
-    min-width:  100%;
-    width: 100%;
-  }
-
-  .parent-header{
-    height: 7.3%;
-    padding-top: 12px;
-    max-height: 100%;
-  }
-  .text-header {
-    margin: 0 !important;
-    padding-top: 6px;
-  }
-
-  .text-header-left {
-    font-size: 12px; /* Giảm kích thước chữ */
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .text-header-mobile {
-    font-size: 12px !important;
-  }
-
-  .fs-4 {
-    font-size: 20px !important; /* Giảm kích thước biểu tượng */
-  }
-
-  .text-header-right div strong {
-    font-size: 12px !important; /* Giảm kích thước chữ cho strong */
-  }
-
-  .text-header-right div p {
-    font-size: 8px !important; /* Giảm kích thước chữ cho p */
-    margin-bottom: 0; /* Giảm khoảng cách trên và dưới */
-  }
-
-  .text-header-left img {
-    width: 100% !important; /* Điều chỉnh kích thước logo cho mobile */
-    max-width: 150px; /* Giới hạn kích thước tối đa */
-    padding-top: 10%;
-    padding : 6% 0 0 0 !important;
-  }
-
-  .topContai {
-    width: 100%; /* Chiều rộng đầy đủ cho các mục */
-    text-align: center; /* Căn giữa nội dung */
-  }
-
-  .header-destop {
-    display: none;
-  }
-
-  .col-1 {
-    padding-left: 0;
-  }
-
-  .btn-menu {
-    padding: 3px;
-    color: white;
-    font-size: 20px;
-    margin-bottom: 0;
-  }
-
-  .btn-menu i{
-    font-size: 26px;
-  }
-
-  #staticBackdrop {
-    width: 40%;
-  }
-
-  .text-menu-mobile {
-    font-size: 14px !important;
-  }
 }
 
 /* menu */
@@ -173,51 +91,11 @@ a {
   font-size: 30px !important;
 }
 
-.offcanvas-backdrop{
+.offcanvas-backdrop {
   width: 62%;
   height: 100%;
 }
 
-/* Mobile menu */
-@media screen and (max-width: 765px) {
-  .offcanvas-body {
-    padding: 15px;
-    padding-top: 0;
-  }
-
-  .offcanvas-body .nav-link {
-    padding: 10px 0;
-    font-size: 18px;
-    color: #333;
-  }
-
-  .offcanvas-body .nav-link:hover {
-    color: #df3138;
-  }
-
-  .parent-menu {
-    display: none !important;
-  }
-
-  .navbar-toggler {
-    margin-left: auto;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 20px;
-    padding-right: 20px;
-    color: #ddd;
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu-left li {
-    padding-right: 10px;
-  }
-}
 /* footer */
 .title-footer {
   font-size: 22px;
@@ -240,13 +118,7 @@ a {
   font-weight: bold;
 }
 
-/* Mobile footer */
-@media screen and (max-width: 765px) {
-  .mobile-footer {
-    display: none !important;
-  }
-}
-.mobile-index{
+.mobile-index {
   margin-top: 8%;
 }
 
@@ -284,31 +156,6 @@ a {
 /* Căn giữa các tab */
 ul.nav-tabs {
   justify-content: center;
-}
-
-/* Mobile Content */
-@media screen and (max-width: 765px) {
-  hr {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  .tieuDe {
-    font-size: 20px;
-  }
-
-  .text-tieuDe {
-    border-bottom: #df3138 3px solid;
-    padding-bottom: 7px !important;
-    color: #df3138;
-    margin-top: 20px;
-    font-size: 16px;
-  }
-
-  /* Căn giữa các tab */
-  ul.nav-tabs {
-    justify-content: center;
-  }
 }
 
 /* Internet */
@@ -380,64 +227,14 @@ thead tr th {
   padding-right: 7px;
 }
 
-/*Mobile Internet */
-@media screen and (max-width: 765px) {
-  button.nav-link {
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-
-  tr td {
-    font-size: 12px !important;
-  }
-  tr th {
-    text-align: center;
-    font-size: 14px !important;
-  }
-
-  /* Ưu đãi */
-  .mobile-uuDai {
-    padding-bottom: 0 !important;
-  }
-
-  .uuDai,
-  .khungGia {
-    border: 1px solid #df3138;
-    padding: 15px !important;
-    border-radius: 8px;
-    width: 70%;
-    margin-left: 15%;
-  }
-
-  .uuDai {
-    margin-bottom: 15px;
-  }
-
-  .text-uuDai {
-    font-weight: bold;
-    color: #df3138;
-    font-size: 18px !important;
-  }
-
-  .p-uuDai {
-    font-weight: bold;
-    font-size: 12px !important;
-    line-height: 16px !important;
-    margin-bottom: 5px;
-  }
-
-  .p-khungGia {
-    font-weight: bold;
-    font-size: 12px !important;
-    line-height: 16px !important;
-    margin-bottom: 5px;
-  }
-}
-
 /* Produt*/
 .card-sp {
   position: relative;
   /* width: 100%; */
+}
+
+.cart-left {
+  margin-left: 100px;
 }
 
 .card-title {
@@ -484,14 +281,16 @@ thead tr th {
 }
 
 .uuDaiCmr {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-.uuDaiCmr span{
+.uuDaiCmr span {
   color: red;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 40px !important;
+  line-height: 1.4;
 }
 
 .gitHot {
@@ -504,21 +303,21 @@ thead tr th {
   color: #ddd;
   font-weight: bold;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   min-width: 45%;
   font-size: 20px;
 }
 
-.btn-dk{
+.btn-dk {
   margin-left: 15px;
 }
 
-.btn-xct{
-  margin-left: 28px ;
+.btn-xct {
+  margin-left: 28px;
 }
 
-.btn-left{
+.btn-left {
   margin-left: 23px;
 }
 
@@ -550,103 +349,6 @@ thead tr th {
   color: #fff;
 }
 
-/*Mobile Produt*/
-@media screen and (max-width: 765px) {
-  .mobile-card-internet {
-    width: 368px;
-    padding: 0;
-  }
-
-  .card-sp {
-    position: relative;
-    width: 368px !important;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
-
-  .card-img-internet {
-    width: 368px !important;
-    height: auto !important;
-  }
-
-  .card-title {
-    font-size: 26px;
-  }
-
-  .card-ct {
-    padding: 5px 0 20px 0;
-  }
-
-  .card-text {
-    font-size: 16px !important;
-    line-height: 12.8px !important;
-    margin-bottom: 10px;
-  }
-
-  .card-camera {
-    /* width: 400px !important; */
-    float: none !important;
-    margin-top: 10px;
-  }
-
-  .card-img-camera1 {
-    width: 256px !important;
-    margin-left: 70px;
-    height: auto !important;
-  }
-
-  .card-img-camera2 {
-    width: 256px !important;
-    margin-left: 50px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-  }
-  .btn-camera-mobile {
-    display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center;
-    }
-
-  .btn-sp {
-    width: 45% !important;
-    min-width: 45%;
-    font-size: 16px;
-    margin-left: 0 !important;
-    /* display: block; */
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .btn-sp:hover {
-    background-color: #ab1e23;
-    color: white;
-  }
-
-  .all-Internet {
-    padding: 8px 16px;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: auto;
-  }
-
-  .all-Internet:hover {
-    background-color: #c12c2f;
-    color: #fff;
-  }
-
-  .mobile-card-truyenhinh1 {
-    margin-left: -80px !important;
-  }
-
-  .mobile-card-truyenhinh2 {
-    /* padding-left: 90px !important; */
-  }
-
-  .card-img-TruyenHinh {
-    width: 368px !important;
-  }
-}
-
 /* Chitiet */
 .title-internet,
 .title-TruyenHinh,
@@ -661,91 +363,6 @@ thead tr th {
   margin-left: 20px;
   line-height: 30px;
   margin-bottom: 10px;
-}
-
-/* Mobile ChiTiet */
-@media screen and (max-width: 765px) {
-  .chiTiet-Top {
-    margin-top: 50px !important;
-    padding-bottom: 0 !important;
-  }
-
-  .title-internet,
-  .title-TruyenHinh,
-  .title-camera {
-    font-size: 18px;
-  }
-
-  /* Internet */
-  .mobile-internet-edit {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .cart-internet-Chitiet {
-    margin: 0 15% 15px;
-  }
-
-  /* Camera */
-  .camera1-mobile {
-    width: 400px;
-    padding-left: 90px !important;
-  }
-
-  .camera2-mobile {
-    width: 350px !important;
-    padding-left: 90px !important;
-  }
-
-  .Camera-btn-mobile {
-    width: 64%;
-    margin: 0 18%;
-    padding-top: 0 !important;
-  }
-
-  /* TruyenHinh */
-  .TruyenHinh-btn-mobile {
-    width: 64%;
-    margin: 0 18%;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-}
-
-/* Mobile GioiThieu DangKy LienHe*/
-@media screen and (max-width: 765px) {
-  .mobile-dangky,
-  .mobile-lienhe,
-  .mobile-gioithieu,
-  .mobile-index {
-    margin-top: 15% !important;
-  }
-
-  .form-dangky {
-    width: 80%;
-    margin-top: 5px;
-    margin: 3% 10%;
-  }
-
-  .mota {
-    font-size: 16px;
-    margin-left: 20px;
-    line-height: 25px;
-    margin-bottom: 10px;
-  }
-
-  .mobile-huongdan {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  .mobile-huongdan .tieuDe {
-    margin-top: 0px;
-  }
-
-  .huongDanChiTiet {
-    margin-top: 15px;
-  }
 }
 
 #lienHeZalo {
@@ -830,4 +447,410 @@ thead tr th {
 #scrollToTopBtn i {
   font-size: 20px;
   /* Kích thước biểu tượng */
+}
+
+@media screen and (max-width: 765px) {
+  /* Header mobile */
+  body {
+    width: 100%;
+  }
+
+  .container{
+    padding-bottom: 10px !important;
+  }
+
+  .parent-header {
+    height: 7.3%;
+    padding-top: 12px;
+    max-height: 100%;
+  }
+  .text-header {
+    margin: 0 !important;
+    padding-top: 6px;
+  }
+
+  .text-header-left {
+    font-size: 12px; /* Giảm kích thước chữ */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text-header-mobile {
+    font-size: 12px !important;
+  }
+
+  .fs-4 {
+    font-size: 20px !important; /* Giảm kích thước biểu tượng */
+  }
+
+  .text-header-right div strong {
+    font-size: 12px !important; /* Giảm kích thước chữ cho strong */
+  }
+
+  .text-header-right div p {
+    font-size: 8px !important; /* Giảm kích thước chữ cho p */
+    margin-bottom: 0; /* Giảm khoảng cách trên và dưới */
+  }
+
+  .text-header-left img {
+    width: 100% !important; /* Điều chỉnh kích thước logo cho mobile */
+    max-width: 150px; /* Giới hạn kích thước tối đa */
+    padding-top: 10%;
+    padding: 6% 0 0 0 !important;
+  }
+
+  .topContai {
+    width: 100%; /* Chiều rộng đầy đủ cho các mục */
+    text-align: center; /* Căn giữa nội dung */
+  }
+
+  .header-destop {
+    display: none;
+  }
+
+  .col-1 {
+    padding-left: 0;
+  }
+
+  .btn-menu {
+    padding: 3px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .btn-menu i {
+    font-size: 26px;
+  }
+
+  #staticBackdrop {
+    width: 40%;
+  }
+
+  .text-menu-mobile {
+    font-size: 14px !important;
+  }
+
+  /* Mobile menu */
+  .offcanvas-body {
+    padding: 15px;
+    padding-top: 0;
+  }
+
+  .offcanvas-body .nav-link {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .offcanvas-body .nav-link:hover {
+    color: #df3138;
+  }
+
+  .parent-menu {
+    display: none !important;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 20px;
+    padding-right: 20px;
+    color: #ddd;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: white;
+    font-weight: bold;
+  }
+
+  .menu-left li {
+    padding-right: 10px;
+  }
+
+  /* Mobile footer */
+  .mobile-footer {
+    display: none !important;
+  }
+
+  /* Mobile Content */
+  hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .tieuDe {
+    font-size: 16px;
+  }
+
+  .text-tieuDe {
+    border-bottom: #df3138 3px solid;
+    padding-bottom: 7px !important;
+    color: #df3138;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  /* Căn giữa các tab */
+  ul.nav-tabs {
+    justify-content: center;
+  }
+
+  /*Mobile Internet */
+  button.nav-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  tr td {
+    font-size: 14px !important;
+  }
+  tr th {
+    text-align: center;
+    font-size: 14px !important;
+  }
+
+  /* Ưu đãi */
+  .uuDaiCmr{
+    padding-left: 0;
+    padding-right: 0;    
+  }
+
+  .uuDaiCmr span {
+    font-size: 15px;
+  }
+
+  .gitHot {
+    width: 60px;
+  }
+
+  .uuDai,
+  .khungGia {
+    border: 1px solid #df3138;
+    padding: 15px !important;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .uuDai {
+    margin-bottom: 15px;
+  }
+
+  .text-uuDai {
+    font-weight: bold;
+    color: #df3138;
+    font-size: 18px !important;
+  }
+
+  .p-uuDai {
+    font-weight: bold;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    margin-bottom: 5px;
+  }
+
+  .p-khungGia {
+    font-weight: bold;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    margin-bottom: 5px;
+  }
+
+  /*Mobile Produt*/
+  .mobile-card-internet {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0px;
+    margin-bottom: 10px !important;
+  }
+
+  .card-sp {
+    position: relative;
+    width: 90% !important;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-left: 5%;
+    font-size: 14px !important;
+  }
+
+  .card-img-internet {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .c-body {
+    width: 100% !important;
+  }
+
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .card-ct {
+    padding: 5px 0 20px 0 !important;
+  }
+
+  .card-text {
+    font-size: 13px !important;
+    line-height: 12.8px !important;
+    margin-bottom: 5px;
+  }
+
+  .c-nd{
+    font-size: 15px !important;
+  }
+
+  .mobile-camera{
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  .card-camera {
+    width: 100% !important;
+    float: none !important;
+    margin-top: 10px;
+  }
+
+  .card-img-camera1 {
+    width: 50% !important;
+    margin: 0 0 0 25%;
+    height: auto !important;
+  }
+
+  .card-img-camera2 {
+    width: 80% !important;
+    margin-left: 50px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .btn-camera-mobile {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;
+  }
+
+  .btn-sp {
+    width: 45% !important;
+    min-width: 45%;
+    font-size: 14px;
+    margin-left: 0 !important;
+    /* display: block; */
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .btn-sp:hover {
+    background-color: #ab1e23;
+    color: white;
+  }
+
+  .btn-dk{
+    margin-left: 4.5% !important;
+  }
+
+  .btn-left{
+    margin-left: 4% !important;
+  }
+
+  .all-Internet {
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 0 !important;
+  }
+
+  .all-Internet:hover {
+    background-color: #c12c2f;
+    color: #fff;
+  }
+
+  .card-img-TruyenHinh {
+    width: 100% !important;
+  }
+
+  /* Mobile ChiTiet */
+  .chiTiet-Top {
+    margin-top: 50px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .title-internet,
+  .title-TruyenHinh,
+  .title-camera {
+    font-size: 18px;
+  }
+
+  /* Internet */
+  .mobile-internet-edit {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .cart-internet-Chitiet {
+    margin: 0 15% 15px;
+  }
+
+  /* Camera */
+  .camera1-mobile {
+    width: 400px;
+    padding-left: 90px !important;
+  }
+
+  .camera2-mobile {
+    width: 350px !important;
+    padding-left: 90px !important;
+  }
+
+  .Camera-btn-mobile {
+    width: 64%;
+    margin: 0 18%;
+    padding-top: 0 !important;
+  }
+
+  /* TruyenHinh */
+  .TruyenHinh-btn-mobile {
+    width: 64%;
+    margin: 0 18%;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Mobile GioiThieu DangKy LienHe*/
+  .mobile-dangky,
+  .mobile-lienhe,
+  .mobile-gioithieu,
+  .mobile-index {
+    margin-top: 13% !important;
+  }
+
+  .form-dangky {
+    width: 80%;
+    margin-top: 5px;
+    margin: 3% 10%;
+  }
+
+  .mota {
+    font-size: 16px;
+    margin-left: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-huongdan {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .mobile-huongdan .tieuDe {
+    margin-top: 0px;
+  }
+
+  .huongDanChiTiet {
+    margin-top: 15px;
+  }
 }

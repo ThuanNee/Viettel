@@ -479,29 +479,24 @@ thead tr th {
     font-size: 12px !important;
   }
 
-  .fs-4 {
-    font-size: 20px !important; /* Giảm kích thước biểu tượng */
-  }
-
   .text-header-right div strong {
-    font-size: 12px !important; /* Giảm kích thước chữ cho strong */
+    font-size: 14px !important;
   }
 
   .text-header-right div p {
-    font-size: 8px !important; /* Giảm kích thước chữ cho p */
-    margin-bottom: 0; /* Giảm khoảng cách trên và dưới */
+    font-size: 8.5px !important;
+    margin-bottom: 0; 
   }
 
   .text-header-left img {
-    width: 100% !important; /* Điều chỉnh kích thước logo cho mobile */
-    max-width: 150px; /* Giới hạn kích thước tối đa */
-    padding-top: 10%;
+    width: 100% !important;
+    max-width: 150px;
     padding: 6% 0 0 0 !important;
   }
 
   .topContai {
-    width: 100%; /* Chiều rộng đầy đủ cho các mục */
-    text-align: center; /* Căn giữa nội dung */
+    width: 100%;
+    text-align: center;
   }
 
   .header-destop {
@@ -532,9 +527,14 @@ thead tr th {
   }
 
   /* Mobile menu */
+  .offcanvas-title{
+    padding-left: 40px;
+  }
+
   .offcanvas-body {
-    padding: 15px;
+    padding: 0 15px 0 35px !important;
     padding-top: 0;
+    font-weight: bold;
   }
 
   .offcanvas-body .nav-link {
@@ -666,7 +666,7 @@ thead tr th {
     width: 100%;
     padding-right: 15px;
     padding-left: 0px;
-    margin-bottom: 10px !important;
+    margin-bottom: 0;
   }
 
   .card-sp {
@@ -687,13 +687,17 @@ thead tr th {
     width: 100% !important;
   }
 
+  .c-body-wifi{
+    padding-bottom: 0 !important;
+  }
+
   .card-title {
     font-size: 18px;
     margin-bottom: 0;
   }
 
   .card-ct {
-    padding: 5px 0 20px 0 !important;
+    padding: 5px 0 16px 0 !important;
   }
 
   .card-text {

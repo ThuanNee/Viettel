@@ -455,7 +455,7 @@ thead tr th {
     width: 100%;
   }
 
-  .container{
+  .container {
     padding-bottom: 10px !important;
   }
 
@@ -480,12 +480,12 @@ thead tr th {
   }
 
   .text-header-right div strong {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 
   .text-header-right div p {
-    font-size: 8.5px !important;
-    margin-bottom: 0; 
+    font-size: 7px !important;
+    margin-bottom: 0;
   }
 
   .text-header-left img {
@@ -527,7 +527,7 @@ thead tr th {
   }
 
   /* Mobile menu */
-  .offcanvas-title{
+  .offcanvas-title {
     padding-left: 40px;
   }
 
@@ -574,7 +574,20 @@ thead tr th {
   .mobile-footer {
     display: none !important;
   }
+  
+  .footer-mobile1{
+    padding-top: 15px !important;
+    max-width: 95%;
+  }
 
+  .footer-mobile1 img{
+    height: 20px !important;
+  }
+
+  .footer-mobile1 p{
+    font-size: 16px !important;
+    margin-bottom: 0;
+  }
   /* Mobile Content */
   hr {
     margin-top: 5px;
@@ -607,21 +620,20 @@ thead tr th {
   }
 
   tr td {
-    font-size: 14px !important;
+    font-size: 10px !important;
   }
   tr th {
     text-align: center;
-    font-size: 14px !important;
+    font-size: 11px !important;
   }
 
   /* Ưu đãi */
-  .uuDaiCmr{
-    padding-left: 0;
-    padding-right: 0;    
+  .uuDaiCmr {
+    padding: 0;
   }
 
   .uuDaiCmr span {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .gitHot {
@@ -631,25 +643,23 @@ thead tr th {
   .uuDai,
   .khungGia {
     border: 1px solid #df3138;
-    padding: 15px !important;
     border-radius: 8px;
     width: 70%;
     margin-left: 15%;
-  }
-
-  .uuDai {
+    padding: 10px !important;
     margin-bottom: 15px;
   }
 
   .text-uuDai {
     font-weight: bold;
     color: #df3138;
-    font-size: 18px !important;
+    font-size: 14px !important;
+    margin-bottom: 5px;
   }
 
   .p-uuDai {
     font-weight: bold;
-    font-size: 12px !important;
+    font-size: 10px !important;
     line-height: 16px !important;
     margin-bottom: 5px;
   }
@@ -666,16 +676,16 @@ thead tr th {
     width: 100%;
     padding-right: 15px;
     padding-left: 0px;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
   }
 
   .card-sp {
     position: relative;
-    width: 90% !important;
+    width: 70% !important;
     margin-bottom: 10px;
-    margin-left: 0px;
-    margin-left: 5%;
-    font-size: 14px !important;
+    margin-left: 15%;
   }
 
   .card-img-internet {
@@ -685,62 +695,55 @@ thead tr th {
 
   .c-body {
     width: 100% !important;
+    padding: 8px !important;
   }
 
-  .c-body-wifi{
+  .c-body-wifi {
     padding-bottom: 0 !important;
   }
 
   .card-title {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 0;
   }
 
   .card-ct {
-    padding: 5px 0 16px 0 !important;
+    padding: 0 0 5px 0 !important;
   }
 
   .card-text {
-    font-size: 13px !important;
-    line-height: 15px !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
     margin-bottom: 5px;
   }
 
-  .c-nd{
-    font-size: 15px !important;
+  .c-nd {
+    font-size: 10px !important;
   }
 
-  .mobile-camera{
+  .mobile-camera {
     padding-left: 33px;
     padding-right: 33px;
   }
 
   .card-camera {
-    width: 100% !important;
+    width: 80% !important;
     float: none !important;
     margin-top: 10px;
+    margin-left: 10%;
   }
 
   .card-img-camera1 {
-    width: 50% !important;
-    margin: 0 0 0 25%;
+    width: 40% !important;
+    margin: 0 0 0 30%;
     height: auto !important;
   }
 
   .card-img-camera2 {
-    width: 80% !important;
+    width: 60% !important;
     margin-left: 50px;
     padding-bottom: 0px;
     padding-top: 0px;
-  }
-
-  .camera1-mobile
-  {
-    max-width: 310px;
-  }
-
-  .camera2-mobile{
-    max-width: 220px;
   }
 
   .btn-camera-mobile {
@@ -752,11 +755,12 @@ thead tr th {
   .btn-sp {
     width: 45% !important;
     min-width: 45%;
-    font-size: 14px;
+    font-size: 11px;
     margin-left: 0 !important;
     /* display: block; */
     margin: 0 auto;
     text-align: center;
+    padding: 4px;
   }
 
   .btn-sp:hover {
@@ -764,18 +768,18 @@ thead tr th {
     color: white;
   }
 
-  .btn-dk{
+  .btn-dk {
     margin-left: 4.5% !important;
   }
 
-  .btn-left{
+  .btn-left {
     margin-left: 4% !important;
   }
 
   .all-Internet {
-    padding: 6px 12px;
+    padding: 5px 12px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 12px;
     margin: auto;
     margin-top: 0 !important;
   }
@@ -813,13 +817,13 @@ thead tr th {
 
   /* Camera */
   .camera1-mobile {
-    width: 400px;
-    padding-left: 90px !important;
+    max-width: 300px;
+    padding-left: 16% !important;
   }
 
   .camera2-mobile {
-    width: 350px !important;
-    padding-left: 90px !important;
+    max-width: 240px !important;
+    padding-left: 17% !important;
   }
 
   .Camera-btn-mobile {
@@ -842,7 +846,7 @@ thead tr th {
   .mobile-gioithieu,
   .mobile-index,
   .chiTiet-Top {
-    margin-top: 13.5% !important;
+    margin-top: 12% !important;
   }
 
   .form-dangky {
@@ -852,10 +856,10 @@ thead tr th {
   }
 
   .mota {
-    font-size: 16px;
+    font-size: 12px;
     margin-left: 20px;
-    line-height: 25px;
-    margin-bottom: 10px;
+    line-height: 15px;
+    margin-bottom: 0;
   }
 
   .mobile-huongdan {

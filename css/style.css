@@ -365,6 +365,18 @@ thead tr th {
   margin-bottom: 10px;
 }
 
+.cuPhapDK{
+  font-size: 30px;
+  text-align: center;
+  padding: 1% 2%;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.cuPhapDK b{
+  color: #dd2329;
+}
+
 #lienHeZalo {
   position: fixed;
   bottom: 100px;
@@ -845,9 +857,11 @@ thead tr th {
   .mobile-lienhe,
   .mobile-gioithieu,
   .mobile-index,
-  .chiTiet-Top {
+  .chiTiet-Top,
+  .internet-mobile{
     margin-top: 12% !important;
   }
+  
 
   .form-dangky {
     width: 80%;
@@ -873,5 +887,10 @@ thead tr th {
 
   .huongDanChiTiet {
     margin-top: 15px;
+  }
+
+  .cuPhapDK{
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }

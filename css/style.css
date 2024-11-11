@@ -473,7 +473,7 @@ thead tr th {
 
   .parent-header {
     height: 7.3%;
-    padding-top: 12px;
+    padding-top: 7px;
     max-height: 100%;
   }
   .text-header {
@@ -892,5 +892,22 @@ thead tr th {
   .cuPhapDK{
     font-size: 20px;
     margin-bottom: 10px;
+  }
+
+  .form-select,
+  .form-control {
+    font-size: 12px;
+  }
+
+  #lienHeZalo {
+    bottom: 80px;
+  }
+  
+  #lienHeSDT {
+    bottom: 80px;
+  }
+  
+  #scrollToTopBtn {
+    bottom: 140px;
   }
 }

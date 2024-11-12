@@ -829,13 +829,15 @@ thead tr th {
 
   /* Camera */
   .camera1-mobile {
-    max-width: 300px;
+    max-width: 300px !important;
     padding-left: 16% !important;
+    margin-left: 0 !important;
   }
 
   .camera2-mobile {
     max-width: 240px !important;
     padding-left: 17% !important;
+    margin-left: 0 !important;
   }
 
   .Camera-btn-mobile {
@@ -910,4 +912,5 @@ thead tr th {
   #scrollToTopBtn {
     bottom: 140px;
   }
+
 }

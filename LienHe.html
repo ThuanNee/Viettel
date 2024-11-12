@@ -20,6 +20,7 @@
 <body ng-app="myApp">
     <div ng-include="'layout/header.html'"></div>
     <div ng-include="'layout/menu.html'"></div>
+
     <div class="container pb-4  mobile-lienhe" style="margin-top: 150px;">
         <div class="tieuDe">
             <a href="" class="text-tieuDe px-4 ">
@@ -27,6 +28,7 @@
             </a>
             <hr>
         </div>
+
         <div class="row pb-4">
             <div class="col-lg-6">
                 <div class="border p-3">
@@ -36,8 +38,8 @@
                     <p class="mota"><b>My Viettel hoặc Viettel Money: </b>miễn phí, giảm 3% hóa đơn.</p>
                     <p class="mota"><b>Qua ngân hàng hoặc cổng thanh toán khác.</b></p>
                 </div>
-
             </div>
+
             <div class="col-lg-6 border pb-2 pt-1 form-dangky">
                 <h2 class="title-internet">Liên Hệ Tư Vấn: </h2>
                 <form>
@@ -58,10 +60,11 @@
                             required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-danger">Gửi</button>
+                    <button type="" class="btn btn-danger" onclick="showError()">Gửi</button>
                 </form>
             </div>
         </div>
+
         <div class="my-4 mobile-huongdan">
             <div class="tieuDe">
                 <a href="" class="text-tieuDe px-4 ">
@@ -69,6 +72,7 @@
                 </a>
                 <hr>
             </div>
+
             <div class="huongDanChiTiet">
                 <p class="mota">
                     <b>1 Kiểm tra gói cước đang sử dụng: </b>
@@ -92,12 +96,15 @@
                 </p>
             </div>
         </div>
+
     </div>
     <button id="scrollToTopBtn"><i class="bi bi-chevron-double-up"></i></button>
-    <a href="https://zalo.me/0988656501" target="_blank"><button id="lienHeZalo"><img src="./img/zalo.png" alt="" width="50px"></button></a>
+    <a href="https://zalo.me/0988656501" target="_blank"><button id="lienHeZalo"><img src="./img/zalo.png" alt=""
+                width="50px"></button></a>
     <a href="tel:098 865 6501"><button id="lienHeSDT"><img src="./img/phone.png" alt="" width="50px"></button></a>
     <div ng-include="'layout/footer.html'"></div>
     <script src="./js/bootstrap.bundle.js"></script>
+
     <script>
         // Hiển thị button khi người dùng cuộn xuống
         window.onscroll = function () {
@@ -116,6 +123,12 @@
                 behavior: "smooth" // Cuộn mượt
             });
         };
+    </script>
+
+    <script>
+        function showError() {
+            alert("Hệ thống đang lỗi. Vui lòng thử lại sau! Bạn có thể liên hệ qua Zalo hoặc Số điện thoại để được tư vấn.");
+        }
     </script>
 </body>
 

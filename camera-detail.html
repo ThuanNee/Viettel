@@ -20,6 +20,7 @@
 <body ng-app="myApp">
     <div ng-include="'layout/header.html'"></div>
     <div ng-include="'layout/menu.html'"></div>
+
     <div class="container">
         <div class="row pb-4 chiTiet-Top">
             <div class="col-lg-7">
@@ -31,6 +32,7 @@
                     <p class="p-uuDai">Trả trước 12 tháng: <span class="fw-normal">Tặng thêm 2 tháng cước</span></p>
                 </div>
             </div>
+
             <div class="col-lg-5">
                 <div class="khungGia">
                     <p class="text-uuDai" style="font-weight: bold; color: #df3138; font-size: 24px;">Giá Cước Lưu Trữ
@@ -48,10 +50,12 @@
             </a>
             <hr>
         </div>
+
         <div class="uuDaiCmr">
             <img src="./img/hot.gif" alt="" class="gitHot">
             <span>Tặng miễn phí khách hàng khi lắp wifi và khách hàng đang dùng wifi Viettel</span>
         </div>
+
         <h2 class="title-camera">1. Camera trong nhà: </h2>
         <p class="mota"><b>Camera Viettel xoay 360 trong nhà:</b> sử dụng kết nối tín hiệu Wifi Viettel cho tốc độ
             truyền tải âm thanh hình ảnh nhanh và ổn định với hệ thống gọn nhẹ đơn giản thân thiện dễ sử dụng.
@@ -83,11 +87,14 @@
         <p class="mota">- Hình ảnh quan sát có màu vào ban đêm</p>
         <p class="mota">- Tích hợp tính năng AI cho phép phân biệt chuyển động của con người với con vật.</p>
     </div>
+
     <button id="scrollToTopBtn"><i class="bi bi-chevron-double-up"></i></button>
-    <a href="https://zalo.me/0988656501" target="_blank"><button id="lienHeZalo"><img src="./img/zalo.png" alt="" width="50px"></button></a>
+    <a href="https://zalo.me/0988656501" target="_blank"><button id="lienHeZalo"><img src="./img/zalo.png" alt=""
+                width="50px"></button></a>
     <a href="tel:098 865 6501"><button id="lienHeSDT"><img src="./img/phone.png" alt="" width="50px"></button></a>
     <div ng-include="'layout/footer.html'"></div>
     <script src="./js/bootstrap.bundle.js"></script>
+    
     <script>
         // Hiển thị button khi người dùng cuộn xuống
         window.onscroll = function () {

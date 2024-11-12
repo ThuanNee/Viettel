@@ -20,6 +20,7 @@
 <body ng-app="myApp">
     <div ng-include="'layout/header.html'"></div>
     <div ng-include="'layout/menu.html'"></div>
+
     <div class="container pb-4 mobile-dangky" style="margin-top: 150px;">
         <div class="tieuDe">
             <a href="" class="text-tieuDe px-4 ">
@@ -27,6 +28,7 @@
             </a>
             <hr>
         </div>
+
         <div class="row">
             <div class="col-lg-6">
                 <div class="border p-3">
@@ -41,6 +43,7 @@
                     </p>
                 </div>
             </div>
+
             <div class="col-lg-6 border pb-2 pt-1 form-dangky">
                 <h2 class="title-internet">Đăng Ký: </h2>
                 <form>
@@ -104,16 +107,20 @@
                     </div>
 
                     <!-- Nút gửi -->
-                    <button type="submit" class="btn btn-danger">Gửi đăng ký</button>
+                    <button type="" class="btn btn-danger" onclick="showError()">Gửi đăng ký</button>
                 </form>
             </div>
         </div>
     </div>
+
+
     <button id="scrollToTopBtn"><i class="bi bi-chevron-double-up"></i></button>
-    <a href="https://zalo.me/0988656501" target="_blank"><button id="lienHeZalo"><img src="./img/zalo.png" alt="" width="50px"></button></a>
+    <a href="https://zalo.me/0988656501" target="_blank"><button id="lienHeZalo"><img src="./img/zalo.png" alt=""
+                width="50px"></button></a>
     <a href="tel:098 865 6501"><button id="lienHeSDT"><img src="./img/phone.png" alt="" width="50px"></button></a>
     <div ng-include="'layout/footer.html'"></div>
     <script src="./js/bootstrap.bundle.js"></script>
+
     <script>
         // Hiển thị button khi người dùng cuộn xuống
         window.onscroll = function () {
@@ -132,6 +139,11 @@
                 behavior: "smooth" // Cuộn mượt
             });
         };
+    </script>
+    <script>
+        function showError() {
+            alert("Hệ thống đang lỗi. Vui lòng thử lại sau! Bạn có thể liên hệ qua Zalo hoặc Số điện thoại để được tư vấn.");
+        }
     </script>
 </body>
 

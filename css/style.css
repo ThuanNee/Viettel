@@ -540,7 +540,7 @@ thead tr th {
 
   /* Mobile menu */
   .offcanvas-title {
-    padding-left: 40px;
+    padding-left: 30px;
   }
 
   .offcanvas-body {
@@ -765,7 +765,7 @@ thead tr th {
   }
 
   .btn-sp {
-    width: 45% !important;
+    width: 49% !important;
     min-width: 45%;
     font-size: 11px;
     margin-left: 0 !important;
@@ -778,10 +778,6 @@ thead tr th {
   .btn-sp:hover {
     background-color: #ab1e23;
     color: white;
-  }
-
-  .btn-dk {
-    margin-left: 4.5% !important;
   }
 
   .btn-left {

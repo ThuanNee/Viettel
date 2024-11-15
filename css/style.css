@@ -305,16 +305,8 @@ thead tr th {
   text-align: center;
   padding: 5px;
   border-radius: 10px;
-  min-width: 45%;
+  min-width: 49%;
   font-size: 20px;
-}
-
-.btn-dk {
-  margin-left: 15px;
-}
-
-.btn-xct {
-  margin-left: 28px;
 }
 
 .btn-left {
@@ -766,7 +758,7 @@ thead tr th {
 
   .btn-sp {
     width: 49% !important;
-    min-width: 45%;
+    min-width: 49%;
     font-size: 11px;
     margin-left: 0 !important;
     /* display: block; */
